@@ -1,0 +1,137 @@
+.mobile-menu {
+    padding-top: 15px;
+    padding-bottom: 29px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/mobile-menu_bg.jpg");
+    background-size: cover;
+    color: #fff;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    overflow-y: auto;
+}
+
+.mobile-menu_active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mobile-menu__inner {
+
+}
+
+.mobile-menu__top {
+    margin-bottom: 37px;
+    position: relative;
+}
+
+.mobile-menu__close {
+    width: 52px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    top: -14px;
+    right: -15px;
+    background-image: url("../img/ic_close_mobile_menu.svg");
+    background-size: cover;
+}
+
+.mobile-menu__logo {
+    margin-bottom: 11px;
+    width: 211px;
+    height: 17px;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.mobile-menu__note {
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: rgba(#fff, .5)
+}
+
+.mobile-menu__nav {
+
+}
+
+.mobile-menu__list {
+    margin-bottom: 45px;
+}
+
+.mobile-menu__item {
+    &:not(:last-of-type) {
+        margin-bottom: 18px;
+    }
+}
+
+.mobile-menu__link {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.23px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobile-menu__registration {
+    margin-bottom: 34px;
+    min-width: 324px;
+    padding: 16px 28px 17px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.mobile-menu__box {
+    &:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+}
+
+.mobile-menu__phone {
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.4px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-menu__span {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgba(#fff, .6);
+    a {
+        color: #fff;
+        text-decoration: none;
+        color: rgba(#fff, .6);
+    }
+}
+
+.mobile-menu__span_work-time {
+    font-size: 12px;
+}
+
+.mobile-menu__span_policy {
+    margin-bottom: 8px;
+}
+
+.mobile-menu__address {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 200%;
+    letter-spacing: -0.14px;
+}

@@ -1,0 +1,10 @@
+/*
+    Пример подключения шрифта woff/woff2
+    https://css-tricks.com/snippets/css/using-font-face/
+
+    @include font-face('ProximaNova', '../fonts/ProximaNova-Regular/ProximaNova-Regular');
+*/
+
+@include font-face('Onest', '../fonts/Onest/Onest-Medium', 500)
+@include font-face('Onest', '../fonts/Onest/Onest-Regular', 400)
+@include font-face('Onest', '../fonts/Onest/Onest-SemiBold', 600)

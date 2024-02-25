@@ -1,0 +1,19 @@
+.modal-video.fancybox__content {
+    padding: 0;
+    width: 80%;
+    height: 80%;
+    max-width: calc(100% - 100px);
+    max-height: calc(100% - 88px);
+    overflow: visible;
+    background: #fff;
+}
+
+.modal-video {
+    display: none;
+}
+
+.modal-video__video {
+    background: #000;
+    width: 100%;
+    height: 100%;
+}

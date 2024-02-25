@@ -1,0 +1,264 @@
+.feedback {
+    margin-bottom: 30px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 24px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 29px;
+    }
+}
+
+.feedback__wrap {
+    padding-bottom: 100px;
+    border-bottom: 2px solid rgba(49, 62, 72, 0.14);
+    @include breakpoint-down($desc-width) {
+        padding-bottom: 79px;
+    }
+    @include breakpoint-down($middle-width) {
+        padding-bottom: 0;
+        border: none;
+    }
+}
+
+.feedback__area {
+    border-radius: 32px;
+    overflow: hidden;
+    background-image: url("../img/feedback/feedback_bg.jpg");
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    min-height: 542px;
+    @include breakpoint-down($desc-width) {
+        border-radius: 26px;
+        min-height: 434px;
+        background-image: url("../img/feedback/feedback_bg-middle.jpg");
+    }
+    @include breakpoint-down($middle-width) {
+        border-radius: 0;
+        margin: 0 -18px;
+        display: block;
+    }
+    @include breakpoint-down($mobile-width) {
+        background-image: url("../img/feedback/feedback_bg-mobile.jpg");
+    }
+}
+
+.feedback__box {
+    padding: 28px 95px 36px 40px;
+    @include breakpoint-down($desc-width) {
+        padding: 22px 84px 29px 31px;
+    }
+    @include breakpoint-down($middle-width) {
+        padding: 17px 18px 20px;
+    }
+}
+
+.feedback__title {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 8px;
+        font-size: 38px;
+        line-height: 129%;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 12px;
+        font-size: 26px;
+        line-height: 120%;
+    }
+}
+
+.feedback__text {
+    margin-bottom: 25px;
+    max-width: 518px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 180%;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 20px;
+        max-width: 414px;
+        font-size: 10px;
+        line-height: 179%;
+        letter-spacing: 0.2px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 6px;
+    }
+    @include breakpoint-down($mobile-width) {
+        max-width: 291px;
+    }
+}
+
+.feedback__form {
+    margin-bottom: 102px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 71px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 79px;
+    }
+}
+
+.feedback__line {
+    display: flex;
+    margin-bottom: 35px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 37px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 30px;
+        display: block;
+    }
+}
+
+.feedback__label {
+    &:first-child {
+        margin-right: 14px;
+        @include breakpoint-down($desc-width) {
+            margin-right: 11px;
+        }
+        @include breakpoint-down($middle-width) {
+            margin-right: 0;
+            margin-bottom: 14px;
+        }
+    }
+    display: block;
+    position: relative;
+    width: 339px;
+    @include breakpoint-down($desc-width) {
+        width: 271px;
+    }
+    @include breakpoint-down($middle-width) {
+        width: 100%;
+    }
+}
+
+.feedback__input {
+    width: 100%;
+    max-width: 324px;
+    padding: 23px 0 24px;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.18px;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    @include breakpoint-down($desc-width) {
+        padding: 19px 0 20px;
+        font-size: 14px;
+        letter-spacing: 0.14px;
+    }
+    @include breakpoint-down($middle-width) {
+        padding: 20px 0;
+        font-size: 15px;
+        letter-spacing: 0.15px;
+    }
+    &:placeholder-shown + .feedback__placeholder {
+        top: 23px;
+        color: rgba(#fff, .6);
+        font-size: 18px;
+        letter-spacing: 0.18px;
+        @include breakpoint-down($desc-width) {
+            font-size: 14px;
+        }
+        @include breakpoint-down($middle-width) {
+            font-size: 15px;
+        }
+    }
+    &:focus + .feedback__placeholder {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 160%;
+        letter-spacing: 0.11px;
+        @include breakpoint-down($desc-width) {
+            top: 0;
+            font-size: 10px;
+            letter-spacing: 0.1px;
+        }
+    }
+}
+
+.feedback__placeholder {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.11px;
+    transition-duration: 0.3s;
+    transition-property: top, font-size, color, letter-spacing;
+    @include breakpoint-down($desc-width) {
+        top: 0;
+        font-size: 10px;
+        letter-spacing: 0.1px;
+    }
+}
+
+.feedback__submit {
+    padding: 26px 58px 30px;
+    font-size: 20px;
+    @include breakpoint-down($desc-width) {
+        font-size: 17px;
+        padding: 21px 46px 22px;
+    }
+    @include breakpoint-down($middle-width) {
+        font-size: 18px;
+        padding: 16px 29px 17px;
+    }
+}
+
+.feedback__policy {
+    max-width: 532px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 160%;
+    color: rgba(#fff, .6);
+    @include breakpoint-down($desc-width) {
+        max-width: 425px;
+        font-size: 10px;
+    }
+    @include breakpoint-down($mobile-width) {
+        max-width: 289px;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.feedback__picture {
+    width: 650px;
+    flex-shrink: 0;
+    @include breakpoint-down($desc-width) {
+        width: 519px;
+    }
+    @include breakpoint-down($middle-width) {
+        width: 100%;
+    }
+}
+
+.feedback__image {
+    height: 100%;
+    object-fit: cover;
+    @include breakpoint-down($middle-width) {
+        height: 433px;
+    }
+    @include breakpoint-down($mobile-width) {
+        height: 270px;
+    }
+}

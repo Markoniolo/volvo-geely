@@ -1,0 +1,185 @@
+.modal-registration {
+    display: none;
+}
+
+.modal-registration.fancybox__content {
+    border-radius: 32px;
+    padding: 28px 36px 33px;
+    color: #fff;
+    width: 498px;
+    background-image: url("../img/modal/modal_bg.jpg");
+    background-size: cover;
+    @include breakpoint-down($mobile-width) {
+        padding: 18px 18px 25px;
+        max-width: 360px;
+        width: 100%;
+        border-radius: 22px;
+        background-image: url("../img/modal/modal_bg-mobile.jpg");
+    }
+    .f-button.is-close-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 1;
+        top: -35px;
+        right: -42px;
+        @include breakpoint-down($mobile-width) {
+            width: 30px;
+            height: 30px;
+            top: 15px;
+            right: 15px;
+        }
+        svg {
+            stroke: #111519;
+            stroke-width: 3px;
+            width: 20px;
+            height: 20px;
+            @include breakpoint-down($mobile-width) {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}
+
+.modal-registration__inner {
+
+}
+
+.modal-registration__title {
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+    @include breakpoint-down($mobile-width) {
+        margin-bottom: 15px;
+        font-size: 22px;
+        line-height: 120%;
+    }
+}
+
+.modal-registration__text {
+    margin-bottom: 25px;
+    max-width: 325px;
+    font-size: 14px;
+    line-height: 160%;
+    @include breakpoint-down($mobile-width) {
+        max-width: 300px;
+        margin-bottom: 16px;
+        font-size: 13px;
+    }
+}
+
+.modal-registration__form {
+
+}
+
+.modal-registration__label {
+    position: relative;
+    display: block;
+    width: 100%;
+    &:not(:last-of-type) {
+        margin-bottom: 26px;
+        @include breakpoint-down($mobile-width) {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+.modal-registration__input {
+    width: 100%;
+    padding: 23px 0 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.18px;
+    color: #fff;
+    background-color: transparent;
+    @include breakpoint-down($mobile-width) {
+        font-size: 15px;
+        letter-spacing: 0.15px;
+        padding: 20px 0;
+    }
+    &:placeholder-shown + .modal-registration__placeholder {
+        top: 23px;
+        color: rgba(#fff, .6);
+        font-size: 18px;
+        letter-spacing: 0.18px;
+        @include breakpoint-down($mobile-width) {
+            font-size: 15px;
+            letter-spacing: 0.15px;
+        }
+    }
+    &:focus + .modal-registration__placeholder {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 160%;
+        letter-spacing: 0.11px;
+        @include breakpoint-down($mobile-width) {
+            top: 0;
+            font-size: 10px;
+            letter-spacing: 0.1px;
+        }
+    }
+}
+
+.modal-registration__placeholder {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.11px;
+    transition-duration: 0.3s;
+    transition-property: top, font-size, color, letter-spacing;
+    color: rgba(#fff, .6);
+    @include breakpoint-down($mobile-width) {
+        font-size: 10px;
+        letter-spacing: 0.1px;
+        top: 0;
+    }
+}
+
+.modal-registration__submit {
+    margin-top: 36px;
+    margin-bottom: 138px;
+    width: 100%;
+    font-size: 20px;
+    padding: 26px 30px 30px;
+    @include breakpoint-down($mobile-width) {
+        margin-top: 30px;
+        margin-bottom: 142px;
+        font-size: 18px;
+        padding: 16px 16px 17px;
+    }
+}
+
+.modal-registration__policy {
+    max-width: 364px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 12px;
+    line-height: 160%;
+    @include breakpoint-down($mobile-width) {
+        max-width: 290px;
+        text-align: left;
+        margin: 0;
+        font-size: 10px;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

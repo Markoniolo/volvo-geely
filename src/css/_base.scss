@@ -1,0 +1,315 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: Onest, sans-serif;
+}
+
+html,
+body {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    color: $c-main;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    width: 100%;
+}
+
+input {
+    @extend .truncate;
+    border: none;
+    outline: none;
+}
+
+label {
+    cursor: pointer;
+    user-select: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+ul {
+    @include list-reset;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p, li, a, button {
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    @include placeholder {
+        color: transparent;
+    }
+}
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: $container-width;
+    padding: 0 60px;
+    @include breakpoint-down($desc-width) {
+        padding: 0 48px;
+        max-width: 1280px;
+    }
+    @include breakpoint-down($middle-width) {
+        padding: 0 18px;
+        max-width: 760px;
+    }
+    @include breakpoint-down($mobile-width) {
+        max-width: 428px;
+    }
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex: 1 0 auto;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 68px;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+    @include breakpoint-down($desc-width) {
+        font-size: 54px;
+        letter-spacing: -1.08px;
+    }
+    @include breakpoint-down($middle-width) {
+        font-size: 34px;
+        line-height: 100%;
+        letter-spacing: -0.84px;
+    }
+}
+
+@mixin btn {
+    border-radius: 46px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    @include breakpoint-down($desc-width) {
+        border-radius: 37px;
+    }
+    @include breakpoint-down($middle-width) {
+        border-radius: 46px;
+    }
+}
+
+.btn-black {
+    @include btn;
+    color: #FFF;
+    background-color: $c-main;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 16px 28px 17px;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    @include breakpoint-down($desc-width) {
+        font-size: 14px;
+        border-radius: 37px;
+    }
+    @include breakpoint-down($middle-width) {
+        font-size: 13px;
+        border-radius: 46px;
+    }
+    &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.btn-black_hover-white {
+    &:hover {
+        background-color: #fff;
+        color: $c-main;
+    }
+}
+
+.btn-black_hover-blue {
+    &:hover {
+        background-color: $c-blue;
+        color: #fff;
+    }
+}
+
+.btn-white {
+    @include btn;
+    background-color: #fff;
+    color: $c-main;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 16px 28px 17px;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: $c-main;
+        color: #fff;
+    }
+}
+
+.slick-nav {
+    display: flex;
+    margin-left: auto;
+    @include breakpoint-down($middle-width) {
+        display: none;
+    }
+}
+
+.slick-nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid rgba(49, 62, 72, 0.14);
+    background-color: #fff;
+    width: 173px;
+    height: 100px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    @include breakpoint-down($desc-width) {
+        width: 138px;
+        height: 80px;
+    }
+    &:hover {
+        background-color: $c-blue;
+        border: 2px solid $c-blue;
+        path {
+            stroke: #fff;
+        }
+    }
+    path {
+        transition-duration: 0.3s;
+        transition-property: stroke;
+    }
+    svg {
+        transition-duration: 0.3s;
+        transition-property: opacity;
+    }
+}
+
+.slick-nav-btn_left {
+    margin-right: 6px;
+    transform: rotate(180deg);
+    @include breakpoint-down($desc-width) {
+        margin-right: 5px;
+    }
+}
+
+.slick-disabled {
+    pointer-events: none;
+    svg {
+        opacity: 0.2;
+    }
+}
+
+.placemark-caption {
+    transform: translate(calc(-50% + 17px), calc(-100% - 7px));
+    display: block;
+    width: fit-content;
+    white-space: nowrap;
+    border-radius: 120px;
+    background: #FFF;
+    padding: 9px 14px 10px;
+    color: #313E48;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        padding: 6px 12px 7px;
+        transform: translate(calc(-50% + 18px), calc(-100% - 5px));
+    }
+}
+
+.fancybox__container {
+    background: rgba(17, 21, 25, 0.90);
+    --fancybox-bg: none;
+}
+
+input.input-error {
+    border-bottom: 1px solid red;
+}
+
+.html_no-scroll {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    body {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        touch-action: none;
+        -ms-touch-action: none;
+    }
+}
+
+.fancybox__slide {
+    padding: 0;
+}

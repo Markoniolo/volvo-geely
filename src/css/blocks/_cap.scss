@@ -1,0 +1,298 @@
+.cap {
+    position: relative;
+    background-image: url("../img/cap/cap_bg.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 247px 0 61px;
+    overflow: hidden;
+    @include breakpoint-down($desc-width) {
+        padding: 197px 0 47px;
+        background-image: url("../img/cap/cap_bg-middle.jpg");
+    }
+    @include breakpoint-down($middle-width) {
+        padding: 120px 0 31px;
+    }
+    @include breakpoint-down($mobile-width) {
+        background-image: url("../img/cap/cap_bg-mobile.jpg");
+    }
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+}
+
+.cap__picture {
+    width: 1414px;
+    position: absolute;
+    z-index: 2;
+    bottom: 174px;
+    right: -448px;
+    @include breakpoint-down($desc-width) {
+        width: 1131px;
+        bottom: 140px;
+        right: -358px;
+    }
+    @include breakpoint-down($middle-width) {
+        width: 752px;
+        bottom: 169px;
+        right: -395px;
+    }
+}
+
+.cap__image {
+    height: 539px;
+    @include breakpoint-down($desc-width) {
+        height: 431px;
+    }
+    @include breakpoint-down($middle-width) {
+        height: 285px;
+    }
+}
+
+.cap__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 271px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 209px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 187px;
+        flex-direction: column;
+    }
+}
+
+.cap__box {
+    padding-right: 50px;
+    @include breakpoint-down($desc-width) {
+        padding-right: 30px;
+    }
+    @include breakpoint-down($middle-width) {
+        padding-right: 0;
+        order: 1;
+    }
+}
+
+.cap__title {
+    margin-bottom: 12px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 11px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 15px;
+        font-size: 42px;
+    }
+}
+
+.cap__note {
+    margin-bottom: 52px;
+    display: block;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.34px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 49px;
+        font-size: 27px;
+        letter-spacing: -0.27px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 28px;
+        font-size: 20px;
+        letter-spacing: -0.2px;
+    }
+}
+
+.cap__registration {
+    font-size: 20px;
+    padding: 26px 58px 30px;
+    @include breakpoint-down($desc-width) {
+        padding: 21px 46px 22px;
+        font-size: 17px;
+    }
+    @include breakpoint-down($middle-width) {
+        padding: 16px 28px 17px;
+        font-size: 18px;
+    }
+}
+
+.cap__rate {
+    position: relative;
+    top: -85px;
+    padding: 11px 20px 14px;
+    border-radius: 22px;
+    background-color: #fff;
+    max-width: 215px;
+    width: 100%;
+    @include breakpoint-down($desc-width) {
+        padding: 8px 15px 14px;
+        border-radius: 18px;
+        max-width: 172px;
+        top: -68px;
+    }
+    @include breakpoint-down($middle-width) {
+        position: static;
+        padding: 6px 12px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin-bottom: 31px;
+    }
+    @include breakpoint-down($mobile-width) {
+        align-items: flex-start;
+    }
+}
+
+.cap__rate-top {
+    display: flex;
+    margin-bottom: 24px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 18px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 0;
+    }
+}
+
+.cap__rate-icon {
+    flex-shrink: 0;
+    margin-right: 8px;
+    margin-top: 8px;
+    width: 36px;
+    height: 36px;
+    @include breakpoint-down($desc-width) {
+        margin-right: 6px;
+        margin-top: 7px;
+        width: 29px;
+        height: 29px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-right: 7px;
+        margin-top: 6px;
+        width: 24px;
+        height: 24px;
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.cap__rate-value {
+    flex-shrink: 0;
+    margin-right: 4px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 110%;
+    color: $c-main;
+    @include breakpoint-down($desc-width) {
+        font-size: 39px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-right: 3px;
+        font-size: 33px;
+        letter-spacing: -0.66px;
+    }
+}
+
+.cap__rate-star {
+    flex-shrink: 0;
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+    @include breakpoint-down($desc-width) {
+        margin-top: 6px;
+        width: 31px;
+        height: 31px;
+    }
+    @include breakpoint-down($middle-width) {
+        width: 25px;
+        height: 25px;
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.cap__rate-text {
+    display: block;
+    color: $c-main;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.12px;
+    @include breakpoint-down($desc-width) {
+        font-size: 10px;
+        line-height: 139%;
+        letter-spacing: -0.1px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-left: 15px;
+        margin-top: 0;
+    }
+    @include breakpoint-down($mobile-width) {
+        margin-top: 5px;
+    }
+}
+
+.cap__list {
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint-down($middle-width) {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    @include breakpoint-down($mobile-width) {
+        max-width: 324px;
+        margin-bottom: -28px;
+    }
+}
+
+.cap__item {
+    max-width: 245px;
+    width: 100%;
+    @include breakpoint-down($desc-width) {
+        max-width: 196px;
+    }
+    @include breakpoint-down($middle-width) {
+        max-width: 160px;
+    }
+    @include breakpoint-down($mobile-width) {
+        width: calc(50% - 10px);
+        margin-bottom: 28px;
+    }
+}
+
+.cap__item-name {
+    margin-bottom: 8px;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 6px;
+        font-size: 41px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 4px;
+        font-size: 32px;
+    }
+}
+
+.cap__item-value {
+    color: #B9C5CF;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.18px;
+    @include breakpoint-down($desc-width) {
+        font-size: 15px;
+        letter-spacing: 0.15px;
+    }
+    @include breakpoint-down($middle-width) {
+        font-size: 13px;
+        letter-spacing: 0.13px;
+    }
+}

@@ -1,0 +1,339 @@
+.why-we {
+    margin-bottom: 30px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 23px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 14px;
+    }
+}
+
+.why-we__wrap {
+    padding-bottom: 140px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 2px solid rgba(49, 62, 72, 0.14);
+    @include breakpoint-down($desc-width) {
+        padding-bottom: 110px;
+    }
+    @include breakpoint-down($middle-width) {
+        display: block;
+        padding-bottom: 60px;
+    }
+}
+
+.why-we__box {
+    margin-right: 138px;
+    max-width: 396px;
+    width: 100%;
+    @include breakpoint-down($desc-width) {
+        max-width: 316px;
+        margin-right: 113px;
+    }
+    @include breakpoint-down($middle-width) {
+        max-width: 100%;
+        margin-bottom: 34px;
+    }
+}
+
+.why-we__note {
+    margin-bottom: 36px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 29px;
+        font-size: 10px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 25px;
+        font-size: 10px;
+    }
+}
+
+.why-we__title {
+    margin-bottom: 79px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 67px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 22px;
+        line-height: 110%;
+    }
+    &::after {
+        content: '';
+        background-image: url("../img/why-we/why-we-after-decor.svg");
+        background-size: cover;
+        width: 137px;
+        height: 40px;
+        display: inline-block;
+        margin-left: 10px;
+        @include breakpoint-down($desc-width) {
+            width: 110px;
+            height: 32px;
+        }
+        @include breakpoint-down($middle-width) {
+            width: 69px;
+            height: 20px;
+        }
+    }
+}
+
+.why-we__text {
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: -0.3px;
+    @include breakpoint-down($desc-width) {
+        font-size: 23px;
+        letter-spacing: -0.23px;
+    }
+    @include breakpoint-down($middle-width) {
+        font-size: 20px;
+        letter-spacing: -0.2px;
+    }
+}
+
+.why-we__area {
+    padding-top: 59px;
+    @include breakpoint-down($desc-width) {
+        padding-top: 48px;
+    }
+    @include breakpoint-down($middle-width) {
+        padding-top: 0;
+    }
+}
+
+.why-we__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -60px;
+    @include breakpoint-down($middle-width) {
+        margin-bottom: -30px;
+        justify-content: space-between;
+    }
+}
+
+.why-we__item {
+    width: 336px;
+    margin-bottom: 60px;
+    @include breakpoint-down($desc-width) {
+        width: 269px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 30px;
+    }
+    @include breakpoint-down($mobile-width) {
+        width: 100%;
+    }
+    &:nth-child(1), &:nth-child(3) {
+        margin-right: 150px;
+        @include breakpoint-down($desc-width) {
+            margin-right: 120px;
+        }
+        @include breakpoint-down($middle-width) {
+            margin-right: 0;
+        }
+    }
+}
+
+.why-we__icon {
+    margin-bottom: 22px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 18px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 20px;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+    &_1 {
+        width: 35px;
+        height: 38px;
+        @include breakpoint-down($desc-width) {
+            width: 28px;
+            height: 30px;
+        }
+        @include breakpoint-down($middle-width) {
+            width: 35px;
+            height: 38px;
+        }
+    }
+    &_2 {
+        width: 40px;
+        height: 40px;
+        @include breakpoint-down($desc-width) {
+            width: 32px;
+            height: 32px;
+        }
+        @include breakpoint-down($middle-width) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &_3 {
+        width: 36px;
+        height: 38px;
+        @include breakpoint-down($desc-width) {
+            width: 29px;
+            height: 30px;
+        }
+        @include breakpoint-down($middle-width) {
+            width: 36px;
+            height: 38px;
+        }
+    }
+    &_4 {
+        width: 59px;
+        height: 39px;
+        @include breakpoint-down($desc-width) {
+            width: 48px;
+            height: 32px;
+        }
+        @include breakpoint-down($middle-width) {
+            width: 59px;
+            height: 39px;
+        }
+    }
+}
+
+.why-we__headline {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 14px;
+        font-size: 16px;
+        line-height: 129%;
+        letter-spacing: -0.16px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 130%;
+        letter-spacing: -0.18px;
+    }
+}
+
+.why-we__description {
+    font-size: 16px;
+    line-height: 150%;
+    color: #292929;
+    @include breakpoint-down($desc-width) {
+        font-size: 12px;
+    }
+    @include breakpoint-down($middle-width) {
+        font-size: 15px;
+    }
+}
+
+.why-we__informer {
+    position: relative;
+    margin-top: 110px;
+    border-radius: 32px;
+    overflow: hidden;
+    color: #fff;
+    background-image: url("../img/why-we/why-we-bg.jpg");
+    background-size: cover;
+    padding: 25px 33px 29px;
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+    @include breakpoint-down($desc-width) {
+        padding: 20px 26px 24px;
+        margin-top: 84px;
+        border-radius: 26px;
+        min-height: 272px;
+        background-image: url("../img/why-we/why-we-bg_middle.jpg");
+    }
+    @include breakpoint-down($middle-width) {
+        padding: 18px 20px 21px;
+        margin-top: 41px;
+        border-radius: 22px;
+        min-height: 390px;
+        background-image: url("../img/why-we/why-we-bg_mob.jpg");
+    }
+}
+
+.why-we__span {
+    position: absolute;
+    top: -16px;
+    right: 26px;
+    font-size: 181px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -5.427px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        top: -11px;
+        right: 22px;
+        font-size: 144px;
+        line-height: 129%;
+        letter-spacing: -4.32px;
+    }
+    @include breakpoint-down($middle-width) {
+        font-size: 113px;
+        letter-spacing: -4.52px;
+        position: static;
+    }
+}
+
+.why-we__caption {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        font-size: 25px;
+        line-height: 129%;
+    }
+    @include breakpoint-down($middle-width) {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+}
+
+.why-we__informer-text {
+    margin-top: auto;
+    max-width: 272px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 170%;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        font-size: 9px;
+        max-width: 200px;
+    }
+}
+
+.why-we__image {
+    position: absolute;
+    width: 628px;
+    height: 245px;
+    bottom: 18px;
+    right: -106px;
+    @include breakpoint-down($desc-width) {
+        width: 502px;
+        height: 195px;
+        bottom: 16px;
+        right: -83px;
+    }
+    @include breakpoint-down($middle-width) {
+        width: 434px;
+        min-width: 434px;
+        height: 169px;
+        bottom: 95px;
+        right: -122px;
+
+    }
+    @include breakpoint-down($mobile-width) {
+        left: 12px;
+        right: unset;
+    }
+}

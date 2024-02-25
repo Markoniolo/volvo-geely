@@ -1,0 +1,322 @@
+.prices {
+    margin-bottom: 34px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 23px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 21px;
+    }
+}
+
+.prices__wrap {
+    padding-bottom: 140px;
+    border-bottom: 2px solid rgba(49, 62, 72, 0.14);
+    @include breakpoint-down($desc-width) {
+        padding-bottom: 95px;
+    }
+    @include breakpoint-down($middle-width) {
+        padding-bottom: 50px;
+    }
+}
+
+.prices__title {
+    margin-bottom: 64px;
+    max-width: 950px;
+    width: 100%;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 56px;
+        max-width: 760px;
+    }
+    @include breakpoint-down($middle-width) {
+        line-height: 110%;
+        margin-bottom: 26px;
+    }
+}
+
+.prices__area {
+    display: flex;
+}
+
+.prices__box {
+    flex-grow: 1;
+    margin-right: 82px;
+    @include breakpoint-down($desc-width) {
+        margin-right: 66px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-right: 0;
+    }
+}
+
+.prices__table {
+    margin-bottom: 32px;
+    border-collapse: collapse;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 41px;
+    }
+    @include breakpoint-down($mobile-width) {
+        margin-bottom: 0;
+        width: 100%;
+    }
+    tr:not(:last-of-type) {
+        border-bottom: 1px solid rgba(#292929, .15);
+    }
+    th {
+        vertical-align: bottom;
+        padding-right: 0;
+        padding-bottom: 26px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.14px;
+        text-transform: uppercase;
+        color: rgba($c-main, .5);
+        @include breakpoint-down($desc-width) {
+            font-size: 11px;
+            letter-spacing: 0.11px;
+            padding-bottom: 22px;
+        }
+        @include breakpoint-down($mobile-width) {
+            padding-right: 14px;
+            font-size: 10px;
+            padding-bottom: 13px;
+        }
+    }
+    th:first-child {
+        width: 534px;
+        @include breakpoint-down($desc-width) {
+            width: 427px;
+        }
+        @include breakpoint-down($mobile-width) {
+            width: 177px;
+        }
+    }
+    th:nth-child(2) {
+        width: 239px;
+        @include breakpoint-down($desc-width) {
+            width: 192px;
+        }
+        @include breakpoint-down($mobile-width) {
+            width: 81px;
+        }
+    }
+    th:nth-child(3) {
+        width: 148px;
+        @include breakpoint-down($desc-width) {
+            width: 118px;
+        }
+        @include breakpoint-down($mobile-width) {
+            width: 66px;
+            padding-right: 0;
+        }
+    }
+    td {
+        padding-top: 37px;
+        padding-bottom: 37px;
+        padding-right: 50px;
+        font-weight: 500;
+        line-height: 130%;
+        text-transform: uppercase;
+        @include breakpoint-down($desc-width) {
+            line-height: 129%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 20px;
+        }
+        @include breakpoint-down($middle-width) {
+            padding-top: 15px;
+            padding-bottom: 17px;
+            height: 66px;
+        }
+    }
+    td:first-child {
+        width: 534px;
+        font-size: 17px;
+        letter-spacing: 0.17px;
+        @include breakpoint-down($desc-width) {
+            font-size: 13px;
+            letter-spacing: 0.13px;
+            width: 427px;
+        }
+        @include breakpoint-down($middle-width) {
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+        }
+        @include breakpoint-down($mobile-width) {
+            width: 177px;
+        }
+    }
+    td:nth-child(2) {
+        width: 239px;
+        font-size: 19px;
+        @include breakpoint-down($desc-width) {
+            font-size: 15px;
+            width: 192px;
+        }
+        @include breakpoint-down($middle-width) {
+            font-size: 11px;
+            line-height: 129%;
+        }
+        @include breakpoint-down($mobile-width) {
+            width: 81px;
+            padding-right: 10px;
+        }
+    }
+    td:nth-child(3) {
+        padding-right: 0;
+        width: 148px;
+        font-size: 19px;
+        color: rgba($c-main, .5);
+        @include breakpoint-down($desc-width) {
+            width: 118px;
+            font-size: 15px;
+            color: rgba($c-main, .4);
+        }
+        @include breakpoint-down($middle-width) {
+            font-size: 11px;
+            line-height: 129%;
+        }
+        @include breakpoint-down($mobile-width) {
+            width: 66px;
+        }
+    }
+}
+
+.prices__td-black {
+    position: relative;
+    color: #fff;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -5px;
+        right: -8px;
+        bottom: -2px;
+        left: -9px;
+        background-color: $c-main;
+        border-radius: 2px;
+    }
+}
+
+.prices__sidebar {
+    position: relative;
+    width: 477px;
+    height: 720px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 32px 42px;
+    @include breakpoint-down($desc-width) {
+        border-radius: 26px;
+        padding: 22px 26px 32px;
+        width: 382px;
+        height: 576px;
+    }
+    @include breakpoint-down($middle-width) {
+        display: none;
+    }
+}
+
+.prices__sidebar-icon {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    @include breakpoint-down($desc-width) {
+        width: 50px;
+        height: 50px;
+        top: 26px;
+        right: 21px;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.prices__sidebar-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.prices__sidebar-inner {
+    max-width: 300px;
+    width: 100%;
+    @include breakpoint-down($desc-width) {
+        max-width: 250px;
+    }
+}
+
+.prices__sidebar-title {
+    margin-bottom: 23px;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 19px;
+        font-size: 27px;
+        line-height: 129%;
+    }
+}
+
+.prices__sidebar-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.16px;
+    @include breakpoint-down($desc-width) {
+        font-size: 14px;
+        line-height: 139%;
+        letter-spacing: -0.14px;
+    }
+}
+
+.prices__sidebar-button {
+    margin-top: auto;
+    max-width: 297px;
+    @include breakpoint-down($desc-width) {
+        font-size: 14px;
+        max-width: 232px;
+        padding: 13px 22px 14px;
+    }
+}
+
+.prices__button {
+    display: block;
+    font-size: 20px;
+    padding: 28px;
+    @include breakpoint-down($desc-width) {
+        font-size: 17px;
+        padding: 22px;
+    }
+    @include breakpoint-down($mobile-width) {
+        display: none;
+    }
+}
+
+.prices__desc-view {
+    @include breakpoint-down($mobile-width) {
+        display: none;
+    }
+}
+
+.prices__mob-view {
+    display: none;
+    @include breakpoint-down($mobile-width) {
+        display: inline;
+    }
+}

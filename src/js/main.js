@@ -1,0 +1,9 @@
+//=require scripts/helpers.js
+//=require scripts/config.js
+//=require scripts/scripts.js
+//=require scripts/contacts.js
+//=require scripts/scroll-to-anchor.js
+//=require scripts/header.js
+//=require scripts/form-validate.js
+//=require scripts/header-nav-link.js
+//=require scripts/reviews-video.js

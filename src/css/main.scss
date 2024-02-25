@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'normalize.css/normalize.css';
+@import 'mixins';
+@import 'fonts';
+
+@import 'slick-carousel/slick/slick.css';
+@import '@fancyapps/ui/dist/fancybox/fancybox.css';
+
+@import 'base';
+
+@import 'blocks/header';
+@import 'blocks/mobile-menu';
+@import 'blocks/content';
+@import 'blocks/footer';
+@import 'blocks/cap';
+@import 'blocks/description';
+@import 'blocks/services';
+@import 'blocks/prices';
+@import 'blocks/why-we';
+@import 'blocks/reviews';
+@import 'blocks/about';
+@import 'blocks/feedback';
+@import 'blocks/contacts';
+@import 'blocks/modal-registration';
+@import 'blocks/modal-video';
+@import 'blocks/modal-thanks';

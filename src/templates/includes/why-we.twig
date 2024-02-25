@@ -1,0 +1,47 @@
+{%
+    set whyWeList = [
+        { icon: '#why-we-icon-1', headline: 'Лучшие цены в Москве',
+            text: 'Добились этого благодаря снижению всех накладных расходов' },
+        { icon: '#why-we-icon-2', headline: 'Соблюдаем сроки',
+            text: 'Мы строго соблюдаем сроки работ при ремонте вашего автомобиля Geely в ЗАО, иначе мы выплатим неустойку' },
+        { icon: '#why-we-icon-3', headline: 'Лучшие специалисты',
+            text: 'Все наши сотрудники имеют соответствующие сертификаты от официального дилера Geely' },
+        { icon: '#why-we-icon-4', headline: 'Свой склад запчастей',
+            text: 'У нас свой склад запчастей,  на которые официальный центр Geely в Москве дает гарантию сроком 1 год' },
+    ]
+%}
+
+<section class="why-we" id="why-we" data-role="anchor-section">
+    <div class="container">
+        <div class="why-we__wrap">
+            <div class="why-we__box">
+                <div class="why-we__note">Почему мы</div>
+                <h2 class="why-we__title title">Мы знаем всё о&nbsp;Volvo и Geely</h2>
+                <p class="why-we__text">Нас объединяет одно — самые теплые чувства к автомобилям этих марок.</p>
+            </div>
+            <div class="why-we__area">
+                <ul class="why-we__list">
+                    {% for item in whyWeList %}
+                        <li class="why-we__item">
+                            <div class="why-we__icon why-we__icon_{{ loop.index }}">
+                                <svg class="image">
+                                    <use xlink:href="{{ item.icon }}"></use>
+                                </svg>
+                            </div>
+                            <div class="why-we__headline">{{ item.headline }}</div>
+                            <p class="why-we__description">{{ item.text }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="why-we__informer">
+                    <div class="why-we__caption">Гарантия качества</div>
+                    <span class="why-we__span">1 год</span>
+                    <div class="why-we__informer-text">Мы даем клиентам 100% гарантию  на&nbsp;работы сроком на 1 год</div>
+                    <img src="/assets/img/why-we/why-we-car.png" alt="" class="why-we__image">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>

@@ -1,0 +1,47 @@
+{%
+    set capList = [
+        { name: '14 лет', value: 'успешной работы автосервиса' },
+        { name: '58 тыс.', value: 'литров замененного моторного масла' },
+        { name: '6594', value: 'довольных нашим сервисом автовладельцев' },
+        { name: '19 тыс.', value: 'замененных автозапчастей' },
+    ]
+%}
+
+<section class="cap" id="cap">
+    <picture class="cap__picture">
+        <img src="/assets/img/cap_car.png" alt="" class="cap__image">
+    </picture>
+    <div class="container">
+        <div class="cap__top">
+            <div class="cap__box">
+                <h1 class="cap__title title">Обслуживание вашего Geely</h1>
+                <span class="cap__note">в сервисе с богатым опытом</span>
+                <a href="#modal-registration" class="cap__registration btn-black btn-black_hover-white" data-fancybox>Запись на сервис</a>
+            </div>
+            <div class="cap__rate">
+                <div class="cap__rate-top">
+                    <div class="cap__rate-icon">
+                        <svg class="image">
+                            <use xlink:href="#yandex"></use>
+                        </svg>
+                    </div>
+                    <div class="cap__rate-value">5.0</div>
+                    <div class="cap__rate-star">
+                        <svg class="image">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                    </div>
+                </div>
+                <span class="cap__rate-text">Рейтинг сервиса по мнению пользователей Яндекс.Карт</span>
+            </div>
+        </div>
+        <ul class="cap__list">
+            {% for item in capList %}
+                <li class="cap__item">
+                    <div class="cap__item-name">{{ item.name }}</div>
+                    <div class="cap__item-value">{{ item.value }}</div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

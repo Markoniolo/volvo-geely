@@ -1,0 +1,238 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+    padding: 38px 0 57px;
+    min-height: 655px;
+    background-image: url("../img/footer/footer_bg.jpg");
+    background-size: cover;
+    color: #fff;
+    @include breakpoint-down($desc-width) {
+        padding: 28px 0 45px;
+        min-height: 524px;
+        background-image: url("../img/footer/footer_bg-middle.jpg");
+    }
+    @include breakpoint-down($mobile-width) {
+        padding: 16px 0 203px;
+        background-image: url("../img/footer/footer_bg-mobile.jpg");
+    }
+    .container {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+.footer__picture {
+    position: absolute;
+    right: -65px;
+    bottom: 0;
+    width: 878px;
+    height: 528px;
+    @include breakpoint-down($desc-width) {
+        right: -52px;
+        width: 703px;
+        height: 422px;
+    }
+    @include breakpoint-down($middle-width) {
+        width: 360px;
+        height: 216px;
+        right: 0;
+    }
+}
+
+.footer__image {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__top {
+    display: flex;
+    margin-bottom: 158px;
+    padding-right: 240px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 132px;
+    }
+    @include breakpoint-down($middle-width) {
+        display: block;
+        margin-bottom: 42px;
+        padding-right: 0;
+    }
+}
+
+.footer__logo {
+    margin-right: 152px;
+    @include breakpoint-down($desc-width) {
+        margin-right: 102px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-right: 0;
+        margin-bottom: 37px;
+    }
+}
+
+.footer__logo-image {
+    width: 400px;
+    height: 31px;
+    @include breakpoint-down($desc-width) {
+        width: 320px;
+        height: 25px;
+    }
+    @include breakpoint-down($middle-width) {
+        width: 219px;
+        height: 17px;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.footer__logo-span {
+    margin-top: 27px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+    @include breakpoint-down($desc-width) {
+        font-size: 10px;
+        margin-top: 18px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-top: 11px;
+        font-size: 8px;
+        color: rgba(#fff, .5);
+    }
+}
+
+.footer__nav {
+
+}
+
+.footer__nav-list {
+    display: flex;
+    @include breakpoint-down($mobile-width) {
+        flex-direction: column;
+    }
+}
+
+.footer__nav-item {
+    flex-shrink: 0;
+    &:not(:last-of-type) {
+        margin-right: 30px;
+        @include breakpoint-down($desc-width) {
+            margin-right: 28px;
+        }
+        @include breakpoint-down($mobile-width) {
+            margin-right: 0;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.footer__nav-link {
+    color: #fff;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: color;
+    @include breakpoint-down($desc-width) {
+        font-size: 15px;
+        letter-spacing: 0.15px;
+    }
+    &:hover {
+        color: rgba(#fff, .7)
+    }
+}
+
+.footer__registration {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    font-size: 18px;
+    padding: 16px 28px 17px;
+    @include breakpoint-down($desc-width) {
+        font-size: 14px;
+        padding: 13px 22px 14px;
+        right: 48px;
+    }
+    @include breakpoint-down($middle-width) {
+        margin-bottom: 34px;
+        padding: 16px 30px 17px;
+        font-size: 18px;
+        position: static;
+        max-width: 324px;
+        width: 100%;
+    }
+}
+
+.footer__box {
+    &:not(:last-of-type) {
+        margin-bottom: 52px;
+        @include breakpoint-down($desc-width) {
+            margin-bottom: 42px;
+        }
+        @include breakpoint-down($middle-width) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.footer__phone {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.48px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 8px;
+        font-size: 20px;
+        letter-spacing: -0.4px;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer__note {
+    font-size: 15px;
+    line-height: 150%;
+    color: rgba(#fff, .6);
+    @include breakpoint-down($desc-width) {
+        font-size: 11px;
+    }
+}
+
+.footer__note_work-time {
+    @include breakpoint-down($desc-width) {
+        font-size: 12px;
+    }
+}
+
+.footer__note_policy {
+    margin-bottom: 10px;
+    @include breakpoint-down($desc-width) {
+        margin-bottom: 8px;
+    }
+    a {
+        color: rgba(#fff, .6);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer__address {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 200%;
+    letter-spacing: -0.18px;
+    @include breakpoint-down($desc-width) {
+        font-size: 14px;
+        letter-spacing: -0.14px;
+    }
+}
